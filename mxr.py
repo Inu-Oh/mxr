@@ -20,7 +20,7 @@ def play_song(source, volume):
     print(f"{player.audio_get_volume()}  -  Duration:{hours:4d}:{minutes:02}:{seconds:02}\n")
 
 
-# Audio data
+# Audio data  TODO: add your file paths and change volume as needed 
 tracks = [ 
     {"source": "file:///path/to/your/music/file/Eg Beach Waves.mp3", "volume": 53},
     {"source": "file:///path/to/your/music/file/Eg Rainforest Rain Soundx.mp3", "volume": 65},

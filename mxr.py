@@ -16,7 +16,7 @@ def play_song(source, volume):
     seconds = int((raw_duration / 1000) % 60)
     minutes = int(raw_duration / (60 * 1000) % 60)
     hours = int(raw_duration / (60 * 60 * 1000))
-    print(f"  Playing: {source.split('/')[7].split('.')[0]:>25}  -  Volume:", end=" ")
+    print(f"  Playing: {source.split('/')[-1].split('.')[0]:>25}  -  Volume:", end=" ")
     print(f"{player.audio_get_volume()}  -  Duration:{hours:4d}:{minutes:02}:{seconds:02}\n")
 
 

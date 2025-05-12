@@ -43,11 +43,11 @@ print("  Press 'Ctrl + C' to exit\n")
 try:
     while True:
         if count <= 60: 
-            print(f"  Playing about {count:02} minutes", end="\r")
+            print(f"  Playing about {count} minutes", end="\r")
         else:
             hours = int(count / 60)
             minutes = int(count % 60)
-            print(f"  Playing about {hours} hours and {minutes:02} minutes", end="\r")
+            print(f"  Playing about {hours} hours and {minutes} minutes", end="\r")
         sleep(60)
         count += 1
 except KeyboardInterrupt:

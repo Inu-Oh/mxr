@@ -30,7 +30,6 @@ tracks = [
 # Display current time
 print("\n  Start time:", datetime.now(), "\n")
 
-
 # Play three songs to repeat 999 times each
 # Add songs or increase repeats if needed
 play_song(tracks[0]["source"], tracks[0]["volume"])
@@ -39,17 +38,17 @@ play_song(tracks[2]["source"], tracks[2]["volume"])
 
 # Display play time and close program with CTRL + C
 count = 0
-print("  Press 'Ctrl + C' to exit\n")
+print("  'Ctrl+C' to exit\n")
 try:
     while True:
         if count <= 60: 
-            print(f"  Playing about {count} minutes", end="\r")
+            print(f"  Play time: {count} minutes", end="\r")
         else:
             hours = int(count / 60)
             minutes = int(count % 60)
-            print(f"  Playing about {hours} hours and {minutes} minutes", end="\r")
+            print(f"  Play time: {hours} hours and {minutes} minutes",end="\r")
         sleep(60)
         count += 1
 except KeyboardInterrupt:
-    print("\n\n  Goodbye !")
+    print("  Goodbye !\n")
     exit(0)
